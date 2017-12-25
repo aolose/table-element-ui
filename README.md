@@ -1,6 +1,37 @@
 # table-element-ui
 element ui 的 table 封装
 
+e.g:
+```
+//template:
+   <x-table :config="cf1">
+            <template scope="s" slot="demoCol">
+              <el-button>{ {s.row.text}}</el-button>
+            </template>
+          </x-table>
+    //script
+      data(){
+        return{
+          cf1:{
+             data:[{text:'text'}],
+             columns:[
+              {
+                label:'col1',
+                render:'demoCol'
+              },
+              {
+                label:'col2',
+                prop:'text'
+              }
+            ]
+          }
+        }}
+      
+```
+![](https://github.com/aolose/table-element-ui/blob/master/eg.png?raw=true)
+
+
+
 ## API
 #### config
 | 参数 | 说明 | 类型 | 可选值 | 默认值 | 内部属性 |
