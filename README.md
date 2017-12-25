@@ -53,12 +53,11 @@ e.g:
 
 
 #### table 
-| 参数 | 说明 | 类型 | 可选值 | 默认值 | 内部属性 |
-| --- | --- | --- | --- | --- | --- |  |
+| 参数 | 说明 | 类型 | 可选值 | 默认值 |
+| --- | --- | --- | --- | --- |
 | attrs | 表格Dom属性 | Object | - | 同Element UI |
 | props | 表格组件属性 | Object | - | 同Element UI |
 | events | 表格事件 | Object | - | 同Element UI |
-
 
 #### columns 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 | 内部属性 |
